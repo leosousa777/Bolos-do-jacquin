@@ -205,7 +205,7 @@ font-weight: 400;
 .col_categorias{
     display: flex;
     flex-direction: column;
-
+justify-content: space-between;
 }
 
 .img_categoria2{
@@ -223,4 +223,35 @@ display: flex;
 align-items: flex-end;
 padding: 20px 10px;
 font-size: 24px;
+}
+
+
+
+footer{
+    background-color: #fff4f4;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.footerr_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+         font-family: "Hanken Grotesk", sans-serif;
+}
+
+.nav_footer{
+    
+}
+
+.footerr_container span
+.nav_footer a{
+         font-family: "Hanken Grotesk", sans-serif;
+
+}
+
+.nav_footer a{
+    text-decoration: none;
+    color: #747478;
 }
