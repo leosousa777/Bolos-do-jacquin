@@ -285,19 +285,24 @@ form input[type=button]{
 
 .list_produtos{
     background-color: var(--corsegundaria);
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 table{
-    background-color: aqua;
+    background-color: ;
     width: 100%;
     font-family: var(--fontHanken);
     text-transform: uppercase;
+    border-collapse: collapse;
 }
+
 
 thead{
     font-size: 12px;
     font-weight: 600;
     color: #444444;
+    text-align: left;
 }
 
 tbody{
@@ -307,6 +312,12 @@ tbody{
 
 table svg{
     width: 35px;
+    color: #bd0000;
+}
+
+th, td{
+    border-bottom: solid 1px #444444;
+    padding: 5px 10p1x;
 }
 
 
@@ -316,12 +327,41 @@ table svg{
 
 
 
+/************FORMULARIO*************/
+
+
+.inputs_form{
+flex-direction: column;
+align-items: center;
+}
 
 
 
 
+.form_coluna1,
+.form_coluna2{
+    max-width: 500px;
+    width: 80%;
+}
 
 
+
+footer{
+    background-color: var(--corPrincipal);
+}
+
+.container_footer{
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.footer a{
+    text-decoration: none; 
+    color: #444444;
+}
 
 
 
@@ -371,25 +411,43 @@ width: 70%;
 
 } 
 
-
-
-/************FORMULARIO*************/
-
-
-.inputs_form{
-flex-direction: column;
-align-items: center;
+/************tabela*************/
+thead{
+    display: none;
 }
 
-
-
-
-.form_coluna1,
-.form_coluna2{
+tbody tr{
+    display: flex;
+    border: solid 1px #444444;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: #000000;
+    flex-direction: column;
     max-width: 500px;
-    width: 80%;
+    margin:  0 auto 50px;
 }
+
+tbody td{
+    border: none;
 }
+
+
+tbody td::before{
+content: attr(data-cell) ": ";
+font-size: 12px;
+color: #444444;
+}
+
+
+.container_footer{
+
+}
+
+
+}
+
+
+
 
 
 
